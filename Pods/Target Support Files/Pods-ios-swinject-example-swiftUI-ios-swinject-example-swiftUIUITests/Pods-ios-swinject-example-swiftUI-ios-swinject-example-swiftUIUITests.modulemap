@@ -1,0 +1,6 @@
+framework module Pods_ios_swinject_example_swiftUI_ios_swinject_example_swiftUIUITests {
+  umbrella header "Pods-ios-swinject-example-swiftUI-ios-swinject-example-swiftUIUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

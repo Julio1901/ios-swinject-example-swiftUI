@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54CADF20A7C997079353AA6C /* Pods_ios_swinject_example_swiftUI_ios_swinject_example_swiftUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0A111E91A37AA87606DA4E /* Pods_ios_swinject_example_swiftUI_ios_swinject_example_swiftUIUITests.framework */; };
+		A697394D92DBBEF377A907E4 /* Pods_ios_swinject_example_swiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FBC92966FB1E6C32A54A3B /* Pods_ios_swinject_example_swiftUI.framework */; };
+		AE503DEB4190B4704A5B1151 /* Pods_ios_swinject_example_swiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFE11923B5CACBA90980B60 /* Pods_ios_swinject_example_swiftUITests.framework */; };
 		F43BA60C2D98446C00910B8F /* ios_swinject_example_swiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BA60B2D98446C00910B8F /* ios_swinject_example_swiftUIApp.swift */; };
 		F43BA60E2D98446C00910B8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BA60D2D98446C00910B8F /* ContentView.swift */; };
 		F43BA6102D98446E00910B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43BA60F2D98446E00910B8F /* Assets.xcassets */; };
@@ -14,6 +17,11 @@
 		F43BA61D2D98446E00910B8F /* ios_swinject_example_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BA61C2D98446E00910B8F /* ios_swinject_example_swiftUITests.swift */; };
 		F43BA6272D98446E00910B8F /* ios_swinject_example_swiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BA6262D98446E00910B8F /* ios_swinject_example_swiftUIUITests.swift */; };
 		F43BA6292D98446E00910B8F /* ios_swinject_example_swiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BA6282D98446E00910B8F /* ios_swinject_example_swiftUIUITestsLaunchTests.swift */; };
+		F43BA6432D98498E00910B8F /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BA63A2D98498E00910B8F /* Car.swift */; };
+		F43BA6442D98498E00910B8F /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BA63B2D98498E00910B8F /* Driver.swift */; };
+		F43BA6452D98498E00910B8F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BA63D2D98498E00910B8F /* Person.swift */; };
+		F43BA6462D98498E00910B8F /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BA63E2D98498E00910B8F /* Vehicle.swift */; };
+		F43BA6472D98498E00910B8F /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BA6412D98498E00910B8F /* DIContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2885984E4CD354B13CCDB6B7 /* Pods-ios-swinject-example-swiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-swinject-example-swiftUI.release.xcconfig"; path = "Target Support Files/Pods-ios-swinject-example-swiftUI/Pods-ios-swinject-example-swiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		2D0A111E91A37AA87606DA4E /* Pods_ios_swinject_example_swiftUI_ios_swinject_example_swiftUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_swinject_example_swiftUI_ios_swinject_example_swiftUIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54C44C3991BB19F9E53BA2E7 /* Pods-ios-swinject-example-swiftUI-ios-swinject-example-swiftUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-swinject-example-swiftUI-ios-swinject-example-swiftUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-ios-swinject-example-swiftUI-ios-swinject-example-swiftUIUITests/Pods-ios-swinject-example-swiftUI-ios-swinject-example-swiftUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6DFE11923B5CACBA90980B60 /* Pods_ios_swinject_example_swiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_swinject_example_swiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BDA48EEE42D287EA6A16BE1 /* Pods-ios-swinject-example-swiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-swinject-example-swiftUITests.release.xcconfig"; path = "Target Support Files/Pods-ios-swinject-example-swiftUITests/Pods-ios-swinject-example-swiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8ED6C7E5C292B178FEF3FCEF /* Pods-ios-swinject-example-swiftUI-ios-swinject-example-swiftUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-swinject-example-swiftUI-ios-swinject-example-swiftUIUITests.release.xcconfig"; path = "Target Support Files/Pods-ios-swinject-example-swiftUI-ios-swinject-example-swiftUIUITests/Pods-ios-swinject-example-swiftUI-ios-swinject-example-swiftUIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9B3B16E5F5D9EB5C301B19FD /* Pods-ios-swinject-example-swiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-swinject-example-swiftUI.debug.xcconfig"; path = "Target Support Files/Pods-ios-swinject-example-swiftUI/Pods-ios-swinject-example-swiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		A1FBC92966FB1E6C32A54A3B /* Pods_ios_swinject_example_swiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_swinject_example_swiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7A222FC6F9D1881712AD021 /* Pods-ios-swinject-example-swiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-swinject-example-swiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-ios-swinject-example-swiftUITests/Pods-ios-swinject-example-swiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F43BA6082D98446C00910B8F /* ios-swinject-example-swiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-swinject-example-swiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43BA60B2D98446C00910B8F /* ios_swinject_example_swiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_swinject_example_swiftUIApp.swift; sourceTree = "<group>"; };
 		F43BA60D2D98446C00910B8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +61,11 @@
 		F43BA6222D98446E00910B8F /* ios-swinject-example-swiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-swinject-example-swiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43BA6262D98446E00910B8F /* ios_swinject_example_swiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_swinject_example_swiftUIUITests.swift; sourceTree = "<group>"; };
 		F43BA6282D98446E00910B8F /* ios_swinject_example_swiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_swinject_example_swiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F43BA63A2D98498E00910B8F /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		F43BA63B2D98498E00910B8F /* Driver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
+		F43BA63D2D98498E00910B8F /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F43BA63E2D98498E00910B8F /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		F43BA6412D98498E00910B8F /* DIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A697394D92DBBEF377A907E4 /* Pods_ios_swinject_example_swiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE503DEB4190B4704A5B1151 /* Pods_ios_swinject_example_swiftUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,12 +89,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54CADF20A7C997079353AA6C /* Pods_ios_swinject_example_swiftUI_ios_swinject_example_swiftUIUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58C90BCE35715DE12AB053A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B3B16E5F5D9EB5C301B19FD /* Pods-ios-swinject-example-swiftUI.debug.xcconfig */,
+				2885984E4CD354B13CCDB6B7 /* Pods-ios-swinject-example-swiftUI.release.xcconfig */,
+				54C44C3991BB19F9E53BA2E7 /* Pods-ios-swinject-example-swiftUI-ios-swinject-example-swiftUIUITests.debug.xcconfig */,
+				8ED6C7E5C292B178FEF3FCEF /* Pods-ios-swinject-example-swiftUI-ios-swinject-example-swiftUIUITests.release.xcconfig */,
+				D7A222FC6F9D1881712AD021 /* Pods-ios-swinject-example-swiftUITests.debug.xcconfig */,
+				7BDA48EEE42D287EA6A16BE1 /* Pods-ios-swinject-example-swiftUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		775AB5AA1C92B2CDFD1B2DE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1FBC92966FB1E6C32A54A3B /* Pods_ios_swinject_example_swiftUI.framework */,
+				2D0A111E91A37AA87606DA4E /* Pods_ios_swinject_example_swiftUI_ios_swinject_example_swiftUIUITests.framework */,
+				6DFE11923B5CACBA90980B60 /* Pods_ios_swinject_example_swiftUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F43BA5FF2D98446C00910B8F = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +126,8 @@
 				F43BA61B2D98446E00910B8F /* ios-swinject-example-swiftUITests */,
 				F43BA6252D98446E00910B8F /* ios-swinject-example-swiftUIUITests */,
 				F43BA6092D98446C00910B8F /* Products */,
+				58C90BCE35715DE12AB053A1 /* Pods */,
+				775AB5AA1C92B2CDFD1B2DE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +144,8 @@
 		F43BA60A2D98446C00910B8F /* ios-swinject-example-swiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				F43BA6422D98498E00910B8F /* DI */,
+				F43BA6402D98498E00910B8F /* Domain */,
 				F43BA60B2D98446C00910B8F /* ios_swinject_example_swiftUIApp.swift */,
 				F43BA60D2D98446C00910B8F /* ContentView.swift */,
 				F43BA60F2D98446E00910B8F /* Assets.xcassets */,
@@ -127,6 +179,41 @@
 			path = "ios-swinject-example-swiftUIUITests";
 			sourceTree = "<group>";
 		};
+		F43BA63C2D98498E00910B8F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F43BA63A2D98498E00910B8F /* Car.swift */,
+				F43BA63B2D98498E00910B8F /* Driver.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F43BA63F2D98498E00910B8F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F43BA63D2D98498E00910B8F /* Person.swift */,
+				F43BA63E2D98498E00910B8F /* Vehicle.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F43BA6402D98498E00910B8F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F43BA63C2D98498E00910B8F /* Models */,
+				F43BA63F2D98498E00910B8F /* Protocols */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F43BA6422D98498E00910B8F /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				F43BA6412D98498E00910B8F /* DIContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F43BA62C2D98446E00910B8F /* Build configuration list for PBXNativeTarget "ios-swinject-example-swiftUI" */;
 			buildPhases = (
+				2330B45E34518F7787C43A6D /* [CP] Check Pods Manifest.lock */,
 				F43BA6042D98446C00910B8F /* Sources */,
 				F43BA6052D98446C00910B8F /* Frameworks */,
 				F43BA6062D98446C00910B8F /* Resources */,
+				60F85BC6E7FADA3C120B1AF6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +240,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F43BA62F2D98446E00910B8F /* Build configuration list for PBXNativeTarget "ios-swinject-example-swiftUITests" */;
 			buildPhases = (
+				05CD1EE468AC41A8A9FFB814 /* [CP] Check Pods Manifest.lock */,
 				F43BA6142D98446E00910B8F /* Sources */,
 				F43BA6152D98446E00910B8F /* Frameworks */,
 				F43BA6162D98446E00910B8F /* Resources */,
@@ -169,9 +259,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F43BA6322D98446E00910B8F /* Build configuration list for PBXNativeTarget "ios-swinject-example-swiftUIUITests" */;
 			buildPhases = (
+				77B85517E65CB6254EEE5191 /* [CP] Check Pods Manifest.lock */,
 				F43BA61E2D98446E00910B8F /* Sources */,
 				F43BA61F2D98446E00910B8F /* Frameworks */,
 				F43BA6202D98446E00910B8F /* Resources */,
+				76F289A8BA065308DDBABA07 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,13 +344,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05CD1EE468AC41A8A9FFB814 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-swinject-example-swiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2330B45E34518F7787C43A6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-swinject-example-swiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60F85BC6E7FADA3C120B1AF6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-swinject-example-swiftUI/Pods-ios-swinject-example-swiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-swinject-example-swiftUI/Pods-ios-swinject-example-swiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-swinject-example-swiftUI/Pods-ios-swinject-example-swiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76F289A8BA065308DDBABA07 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-swinject-example-swiftUI-ios-swinject-example-swiftUIUITests/Pods-ios-swinject-example-swiftUI-ios-swinject-example-swiftUIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-swinject-example-swiftUI-ios-swinject-example-swiftUIUITests/Pods-ios-swinject-example-swiftUI-ios-swinject-example-swiftUIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-swinject-example-swiftUI-ios-swinject-example-swiftUIUITests/Pods-ios-swinject-example-swiftUI-ios-swinject-example-swiftUIUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77B85517E65CB6254EEE5191 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-swinject-example-swiftUI-ios-swinject-example-swiftUIUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F43BA6042D98446C00910B8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F43BA6472D98498E00910B8F /* DIContainer.swift in Sources */,
+				F43BA6462D98498E00910B8F /* Vehicle.swift in Sources */,
+				F43BA6452D98498E00910B8F /* Person.swift in Sources */,
 				F43BA60E2D98446C00910B8F /* ContentView.swift in Sources */,
 				F43BA60C2D98446C00910B8F /* ios_swinject_example_swiftUIApp.swift in Sources */,
+				F43BA6432D98498E00910B8F /* Car.swift in Sources */,
+				F43BA6442D98498E00910B8F /* Driver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +532,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -395,7 +595,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -416,6 +616,7 @@
 		};
 		F43BA62D2D98446E00910B8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B3B16E5F5D9EB5C301B19FD /* Pods-ios-swinject-example-swiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -445,6 +646,7 @@
 		};
 		F43BA62E2D98446E00910B8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2885984E4CD354B13CCDB6B7 /* Pods-ios-swinject-example-swiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -474,6 +676,7 @@
 		};
 		F43BA6302D98446E00910B8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7A222FC6F9D1881712AD021 /* Pods-ios-swinject-example-swiftUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +697,7 @@
 		};
 		F43BA6312D98446E00910B8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BDA48EEE42D287EA6A16BE1 /* Pods-ios-swinject-example-swiftUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -514,6 +718,7 @@
 		};
 		F43BA6332D98446E00910B8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54C44C3991BB19F9E53BA2E7 /* Pods-ios-swinject-example-swiftUI-ios-swinject-example-swiftUIUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +737,7 @@
 		};
 		F43BA6342D98446E00910B8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ED6C7E5C292B178FEF3FCEF /* Pods-ios-swinject-example-swiftUI-ios-swinject-example-swiftUIUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
