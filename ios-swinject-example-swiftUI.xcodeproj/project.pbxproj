@@ -10,6 +10,11 @@
 		54CADF20A7C997079353AA6C /* Pods_ios_swinject_example_swiftUI_ios_swinject_example_swiftUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0A111E91A37AA87606DA4E /* Pods_ios_swinject_example_swiftUI_ios_swinject_example_swiftUIUITests.framework */; };
 		A697394D92DBBEF377A907E4 /* Pods_ios_swinject_example_swiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FBC92966FB1E6C32A54A3B /* Pods_ios_swinject_example_swiftUI.framework */; };
 		AE503DEB4190B4704A5B1151 /* Pods_ios_swinject_example_swiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFE11923B5CACBA90980B60 /* Pods_ios_swinject_example_swiftUITests.framework */; };
+		F43016822D98CFF5001DD811 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43016812D98CFF5001DD811 /* Drink.swift */; };
+		F43016852D98D024001DD811 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43016842D98D024001DD811 /* Coffee.swift */; };
+		F43016872D98D040001DD811 /* Tea.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43016862D98D040001DD811 /* Tea.swift */; };
+		F43016892D98D223001DD811 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43016882D98D223001DD811 /* Product.swift */; };
+		F430168D2D98D260001DD811 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = F430168C2D98D260001DD811 /* Book.swift */; };
 		F43BA60C2D98446C00910B8F /* ios_swinject_example_swiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BA60B2D98446C00910B8F /* ios_swinject_example_swiftUIApp.swift */; };
 		F43BA60E2D98446C00910B8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BA60D2D98446C00910B8F /* ContentView.swift */; };
 		F43BA6102D98446E00910B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43BA60F2D98446E00910B8F /* Assets.xcassets */; };
@@ -51,6 +56,11 @@
 		9B3B16E5F5D9EB5C301B19FD /* Pods-ios-swinject-example-swiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-swinject-example-swiftUI.debug.xcconfig"; path = "Target Support Files/Pods-ios-swinject-example-swiftUI/Pods-ios-swinject-example-swiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		A1FBC92966FB1E6C32A54A3B /* Pods_ios_swinject_example_swiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_swinject_example_swiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7A222FC6F9D1881712AD021 /* Pods-ios-swinject-example-swiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-swinject-example-swiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-ios-swinject-example-swiftUITests/Pods-ios-swinject-example-swiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F43016812D98CFF5001DD811 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		F43016842D98D024001DD811 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
+		F43016862D98D040001DD811 /* Tea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tea.swift; sourceTree = "<group>"; };
+		F43016882D98D223001DD811 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		F430168C2D98D260001DD811 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		F43BA6082D98446C00910B8F /* ios-swinject-example-swiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-swinject-example-swiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43BA60B2D98446C00910B8F /* ios_swinject_example_swiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_swinject_example_swiftUIApp.swift; sourceTree = "<group>"; };
 		F43BA60D2D98446C00910B8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -184,6 +194,9 @@
 			children = (
 				F43BA63A2D98498E00910B8F /* Car.swift */,
 				F43BA63B2D98498E00910B8F /* Driver.swift */,
+				F43016842D98D024001DD811 /* Coffee.swift */,
+				F43016862D98D040001DD811 /* Tea.swift */,
+				F430168C2D98D260001DD811 /* Book.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -193,6 +206,8 @@
 			children = (
 				F43BA63D2D98498E00910B8F /* Person.swift */,
 				F43BA63E2D98498E00910B8F /* Vehicle.swift */,
+				F43016812D98CFF5001DD811 /* Drink.swift */,
+				F43016882D98D223001DD811 /* Product.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -454,10 +469,15 @@
 			files = (
 				F43BA6472D98498E00910B8F /* DIContainer.swift in Sources */,
 				F43BA6462D98498E00910B8F /* Vehicle.swift in Sources */,
+				F43016872D98D040001DD811 /* Tea.swift in Sources */,
 				F43BA6452D98498E00910B8F /* Person.swift in Sources */,
 				F43BA60E2D98446C00910B8F /* ContentView.swift in Sources */,
+				F43016892D98D223001DD811 /* Product.swift in Sources */,
 				F43BA60C2D98446C00910B8F /* ios_swinject_example_swiftUIApp.swift in Sources */,
+				F43016852D98D024001DD811 /* Coffee.swift in Sources */,
+				F430168D2D98D260001DD811 /* Book.swift in Sources */,
 				F43BA6432D98498E00910B8F /* Car.swift in Sources */,
+				F43016822D98CFF5001DD811 /* Drink.swift in Sources */,
 				F43BA6442D98498E00910B8F /* Driver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
