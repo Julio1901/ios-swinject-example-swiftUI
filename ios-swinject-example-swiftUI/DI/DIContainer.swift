@@ -13,38 +13,28 @@ class DIContainer {
     let container = Container()
     
     private init () {
-        
-        //MARK: Basic examples
-        container.register(
-            Vehicle.self,
-            factory: { _ in Car(name: "Honda Civic")}
-        )
-        container.register(Person.self, factory: { r in
-            Driver(name: "Julio Cesar", vehicle: r.resolve(Vehicle.self)!)
-        })
-        
-        
-        //MARK: Examples with Named Registration
-        container.register(Drink.self, name: "coffee", factory: { _ in
-            Coffee(drinkType: "Coffee")
-        })
-        
-        container.register(Drink.self, name: "tea", factory: { _ in
-            Tea(drinkType: "tea")
-        })
-        
-        //MARK: Registration examples with arguments
-        container.register(Product.self, factory: { _, name, sold in
-            Book(name: name, sold: sold)
-        })
-        
-        //MARK: overwritten example
-        container.register(Product.self, factory: { _, name, sold in
-            let test: String = name
-            return Book(name: "overwritten", sold: sold)
-        })
-        
-    }
     
+        container.register(DriverProtocol.self) { _ in Driver() }
+            .initCompleted { r, p in
+                let driver = p as! Driver
+                driver.car = r.resolve(CarProtocol.self)!
+        }
+        
+        container.register(CarProtocol.self) { r in
+            Car(driver: r.resolve(DriverProtocol.self)!)
+        }
+        
+        container.register(BoatProtocol.self) { _ in Boat() }
+            .initCompleted { r, b in
+                let boat = b as! Boat
+                boat.captain = r.resolve(CaptainProtocol.self)!
+        }
+        
+        container.register(CaptainProtocol.self) { _ in Captain() }
+            .initCompleted { r, c in
+                let captain = c as! Captain
+                captain.boat = r.resolve(BoatProtocol.self)!
+        }
+    }
     
 }

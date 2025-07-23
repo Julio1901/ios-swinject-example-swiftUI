@@ -7,12 +7,8 @@
 
 import Foundation
 
-class Driver: Person {
-    let name: String
-    let vehicle: Vehicle
-    
-    init(name: String, vehicle: Vehicle) {
-        self.name = name
-        self.vehicle = vehicle
-    }
+class Driver: DriverProtocol {
+    var car: CarProtocol?
+    var name: String = "Julio"
+
 }
