@@ -20,6 +20,8 @@
 		F43BA6432D98498E00910B8F /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BA63A2D98498E00910B8F /* Car.swift */; };
 		F43BA6442D98498E00910B8F /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BA63B2D98498E00910B8F /* Driver.swift */; };
 		F43BA6472D98498E00910B8F /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BA6412D98498E00910B8F /* DIContainer.swift */; };
+		F44CE4252E3FF086009A68A5 /* BussProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44CE4242E3FF081009A68A5 /* BussProtocol.swift */; };
+		F44CE4272E3FF0AC009A68A5 /* Buss.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44CE4262E3FF0A9009A68A5 /* Buss.swift */; };
 		F464CDCA2E311EE100E944DF /* CarProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464CDC92E311ED700E944DF /* CarProtocol.swift */; };
 		F464CDCC2E311F0900E944DF /* DriverProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464CDCB2E311F0600E944DF /* DriverProtocol.swift */; };
 		F464CDCE2E31231600E944DF /* BoatProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464CDCD2E31231000E944DF /* BoatProtocol.swift */; };
@@ -68,6 +70,9 @@
 		F43BA63A2D98498E00910B8F /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		F43BA63B2D98498E00910B8F /* Driver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
 		F43BA6412D98498E00910B8F /* DIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		F44CE4232E3EBBDD009A68A5 /* swinject_object_scopes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = swinject_object_scopes.md; sourceTree = "<group>"; };
+		F44CE4242E3FF081009A68A5 /* BussProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BussProtocol.swift; sourceTree = "<group>"; };
+		F44CE4262E3FF0A9009A68A5 /* Buss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buss.swift; sourceTree = "<group>"; };
 		F464CDC92E311ED700E944DF /* CarProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarProtocol.swift; sourceTree = "<group>"; };
 		F464CDCB2E311F0600E944DF /* DriverProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverProtocol.swift; sourceTree = "<group>"; };
 		F464CDCD2E31231000E944DF /* BoatProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatProtocol.swift; sourceTree = "<group>"; };
@@ -130,6 +135,7 @@
 		F43BA5FF2D98446C00910B8F = {
 			isa = PBXGroup;
 			children = (
+				F44CE4222E3EBBC1009A68A5 /* Annotations */,
 				F43BA60A2D98446C00910B8F /* ios-swinject-example-swiftUI */,
 				F43BA61B2D98446E00910B8F /* ios-swinject-example-swiftUITests */,
 				F43BA6252D98446E00910B8F /* ios-swinject-example-swiftUIUITests */,
@@ -190,6 +196,7 @@
 		F43BA63C2D98498E00910B8F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F44CE4262E3FF0A9009A68A5 /* Buss.swift */,
 				F464CDD32E3123D800E944DF /* Captain.swift */,
 				F464CDD12E31239300E944DF /* Boat.swift */,
 				F43BA63A2D98498E00910B8F /* Car.swift */,
@@ -201,6 +208,7 @@
 		F43BA63F2D98498E00910B8F /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				F44CE4242E3FF081009A68A5 /* BussProtocol.swift */,
 				F464CDCF2E31232E00E944DF /* CaptainProtocol.swift */,
 				F464CDCD2E31231000E944DF /* BoatProtocol.swift */,
 				F464CDCB2E311F0600E944DF /* DriverProtocol.swift */,
@@ -224,6 +232,14 @@
 				F43BA6412D98498E00910B8F /* DIContainer.swift */,
 			);
 			path = DI;
+			sourceTree = "<group>";
+		};
+		F44CE4222E3EBBC1009A68A5 /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE4232E3EBBDD009A68A5 /* swinject_object_scopes.md */,
+			);
+			path = Annotations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -472,6 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F44CE4252E3FF086009A68A5 /* BussProtocol.swift in Sources */,
 				F43BA6472D98498E00910B8F /* DIContainer.swift in Sources */,
 				F464CDD42E3123DE00E944DF /* Captain.swift in Sources */,
 				F43BA60E2D98446C00910B8F /* ContentView.swift in Sources */,
@@ -479,6 +496,7 @@
 				F43BA6432D98498E00910B8F /* Car.swift in Sources */,
 				F464CDCC2E311F0900E944DF /* DriverProtocol.swift in Sources */,
 				F464CDCE2E31231600E944DF /* BoatProtocol.swift in Sources */,
+				F44CE4272E3FF0AC009A68A5 /* Buss.swift in Sources */,
 				F464CDCA2E311EE100E944DF /* CarProtocol.swift in Sources */,
 				F464CDD02E31233B00E944DF /* CaptainProtocol.swift in Sources */,
 				F43BA6442D98498E00910B8F /* Driver.swift in Sources */,

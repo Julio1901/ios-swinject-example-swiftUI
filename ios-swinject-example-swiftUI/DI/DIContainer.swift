@@ -13,12 +13,13 @@ class DIContainer {
     let container = Container()
     
     private init () {
-    
+        
+        //MARK: Exemplo 01 objetos compartilhados
         container.register(DriverProtocol.self) { _ in Driver() }
             .initCompleted { r, p in
                 let driver = p as! Driver
                 driver.car = r.resolve(CarProtocol.self)!
-        }
+        }.inObjectScope(.container)
         
         container.register(CarProtocol.self) { r in
             Car(driver: r.resolve(DriverProtocol.self)!)
@@ -35,6 +36,10 @@ class DIContainer {
                 let captain = c as! Captain
                 captain.boat = r.resolve(BoatProtocol.self)!
         }
+        
+        container.register(BussProtocol.self, factory: { r in
+            Buss(driver: r.resolve(DriverProtocol.self)!, lineNumber: 147)
+        })
     }
     
 }

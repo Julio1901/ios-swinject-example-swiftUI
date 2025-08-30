@@ -7,5 +7,5 @@
 
 protocol DriverProtocol {
     var car: CarProtocol? { get set }
-    var name: String { get }
+    var name: String { get set }
 }
